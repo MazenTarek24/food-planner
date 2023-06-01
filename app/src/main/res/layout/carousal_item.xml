@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:fabCradleMargin="15dp"
+    app:fabCradleRoundedCornerRadius="40dp"
+    app:fabCradleVerticalOffset="5dp"
+    android:layout_margin="5dp"
+    xmlns:tools="http://schemas.android.com/tools"
+  >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/image_carousal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:text="pizza"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/image_carousal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/txt_meal"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_favorite_24"
+            android:id="@+id/str_fav"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_meal"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

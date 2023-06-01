@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/background"
+            android:scaleType="centerCrop"
+            android:id="@+id/str_thumb"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:fabCradleMargin="15dp"
+            app:fabCradleRoundedCornerRadius="40dp"
+            app:fabCradleVerticalOffset="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/recipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Recipe"
+                    android:textStyle="italic"
+                    android:textSize="24sp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/str_meal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/recipe"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Creamy sweet corner Grits"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+>
+            <TextView
+                android:id="@+id/txt_ingred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/card"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Ingredients"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="10dp"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_add_plan"
+                android:text="add to plan"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#171616"
+                android:layout_marginLeft="100dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <TextView
+            android:id="@+id/txt_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ingred"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="American"
+            android:textStyle="italic"
+            android:textSize="24sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+
+            android:orientation="horizontal">
+
+            <!-- First Row -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+                app:fabCradleRoundedCornerRadius="40dp"
+                app:fabCradleVerticalOffset="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleRoundedCornerRadius="40dp"
+                app:fabCradleVerticalOffset="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/ing2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleRoundedCornerRadius="40dp"
+                app:fabCradleVerticalOffset="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/ing3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- First Row -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleRoundedCornerRadius="40dp"
+                app:fabCradleVerticalOffset="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/ing4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+
+                android:backgroundTint="#782587"
+
+                app:fabCradleRoundedCornerRadius="40dp"
+                app:fabCradleVerticalOffset="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ing5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleRoundedCornerRadius="40dp"
+                app:fabCradleVerticalOffset="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ing6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- First Row -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/ing7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleRoundedCornerRadius="40dp"
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/ing8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/ing9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Second Row -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/ing10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/ing11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/ing12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Third Row -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/ing13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/ing14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/ing15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Fourth Row -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/ing16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/ing17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/ing18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- First Row -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabCradleRoundedCornerRadius="40dp"
+                android:layout_weight="1"
+                android:backgroundTint="#782587"
+
+                app:fabCradleVerticalOffset="5dp"
+                android:layout_margin="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/ing19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla extract"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/meas19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="vanilla"
+                        android:textColor="#fff"
+
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- First Row -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabCradleRoundedCornerRadius="40dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#782587"
+
+                    app:fabCradleVerticalOffset="5dp"
+                    android:layout_margin="5dp">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/ing20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="vanilla extract"
+                            android:textColor="#fff"
+
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/meas20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="vanilla"
+                            android:textColor="#fff"
+
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </com.google.android.material.card.MaterialCardView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sreps"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Steps"
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            app:fabCradleRoundedCornerRadius="40dp"
+            app:fabCradleVerticalOffset="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/desc_meal"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+        </com.google.android.material.card.MaterialCardView>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+          />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
